@@ -853,7 +853,7 @@ aq_pmp_top  x_aq_pmp_top (
 
 
 //==========================================================
-//  Instance aq_pmp_top sub module 
+//  Instance aq_cpuio_top sub module 
 //==========================================================
 // &Instance("aq_cpuio_top"); @52
 aq_cpuio_top  x_aq_cpuio_top (
