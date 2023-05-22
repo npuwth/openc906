@@ -248,7 +248,7 @@ AUIPC:
       auipc x4, 0xa
       bne x2, x4, TEST_FAIL
       auipc x2, 0x0
-      li x3, 0x80000014
+      li x3, 0x80000010
       addw x2, x3, x2
       auipc x4, 0x80000
       bne x2, x4, TEST_FAIL

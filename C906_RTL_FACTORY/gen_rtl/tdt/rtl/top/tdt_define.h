@@ -12,6 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+`include "cpu_cfig.h"
 
 `ifdef TDT_DM_EXT_TRIGGER_EN
   `define TDT_DM_GROUP_TRI_EN

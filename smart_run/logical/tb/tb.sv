@@ -53,7 +53,7 @@ wire jtg_tdi;
 wire jtg_tdo;
 wire  pad_yy_gate_clk_en_b;
 
-static integer FILE;
+integer FILE;
 
 wire uart0_sin;
 wire [7:0]b_pad_gpio_porta;
@@ -310,23 +310,23 @@ begin
 
 end
 
-`ifndef NO_DUMP
-initial
-begin
-`ifdef NC_SIM
-  $dumpfile("test.vcd");
-  $dumpvars;  
-`else
-   `ifdef IVERILOG_SIM
-     $dumpfile("test.vcd");
-     $dumpvars;  
-   `else
-     $display("######time:%d, Dump start######",$time);
-     $fsdbDumpvars();
-   `endif
-`endif
-end
-`endif
+// `ifndef NO_DUMP
+// initial
+// begin
+// `ifdef NC_SIM
+//   $dumpfile("test.vcd");
+//   $dumpvars;  
+// `else
+//    `ifdef IVERILOG_SIM
+//      $dumpfile("test.vcd");
+//      $dumpvars;  
+//    `else
+//      $display("######time:%d, Dump start######",$time);
+// //     $fsdbDumpvars();
+//    `endif
+// `endif
+// end
+// `endif
 
 
 assign jtg_tdi = 1'b0;
