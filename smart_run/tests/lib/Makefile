@@ -32,6 +32,7 @@ OBJECTS = $(SSRC:%.S=%.o) $(sSRC:%.s=%.o) $(CSRC:%.c=%.o)
 FLAG_ABI = 
 FLAG_MARCH = -mtune=c906 
 #CPU_ARCH_FLAG_0 => CPU Arch: c906, c906fd, c906fdv
+CPU_ARCH_FLAG_0 = c906fd
 ifeq (${CPU_ARCH_FLAG_0}, c906)
   FLAG_MARCH += -march=rv64imacxtheadc
   FLAG_ABI   = -mabi=lp64

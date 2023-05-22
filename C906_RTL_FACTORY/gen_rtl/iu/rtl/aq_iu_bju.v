@@ -601,7 +601,7 @@ assign bju_ag_tar_pc[63:0] = ag_bju_pc[63:0];
 //                  Condition Branch
 //==========================================================
 assign bju_cond_sel     = bju_cond_sel_ex1 || bju_entry_vld;
-assign bju_beq_taken    = bju_src0[63:0] == bju_src1[63:0];
+assign bju_beq_taken    = bju_src0[63:0] == bju_src1[63:0]; // here compare equal
 assign bju_src0_lt_src1 = bju_src0[63:0] < bju_src1[63:0];
 assign bju_src0_lt_src1_signed =  bju_src0[63] &&  bju_src1[63] && bju_src0_lt_src1
                                || bju_src0[63] && !bju_src1[63]

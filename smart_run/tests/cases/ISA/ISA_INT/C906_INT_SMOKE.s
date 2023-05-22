@@ -243,7 +243,7 @@ LUI:
 .global AUIPC
 AUIPC:
       auipc x2, 0x0
-      li x3, 0xa00e
+      li x3, 0xa00a
       c.add x2, x3
       auipc x4, 0xa
       bne x2, x4, TEST_FAIL
